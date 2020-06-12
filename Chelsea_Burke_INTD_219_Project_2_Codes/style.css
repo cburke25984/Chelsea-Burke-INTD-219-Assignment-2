@@ -1,0 +1,131 @@
+/* -- Global -- */
+body {
+
+  font-family: Arial;
+  font-size: 1rem;
+  margin: 0; /* Remove body margins */
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 1020px) {
+  body {
+    background: linear-gradient(90deg, #FEFADD 50%, #ffe24b 50%);
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  body {
+    background-color: #FEFADD;
+  }
+}
+
+/* -- Header -- */
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #b0c2d4;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.3px;
+  color: #0a1329;
+}
+
+/* -- Flexbox Containers -- */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* -- Flexbox Half Containers -- */
+.left-half, .right-half {
+  padding: 5px;
+  width: 500px;
+}
+
+.right-half {
+  background-color: #FFE24B;
+}
+
+img {
+  max-width: 75%;
+  height: auto;
+  padding-top: 2rem;
+  padding-left: 4rem;
+}
+
+/* -- Form -- */
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+label, input {
+  display: flex;
+  letter-spacing: 0.3px;
+  color: #0a1329;
+  padding: 10px;
+  border-radius: 13px;
+  font-size: 1rem;
+}
+
+input {
+  margin-bottom: 18px;
+  box-shadow: inset 0 2px 4px #0A1329;
+  width: 336px;
+  outline: none;
+  border: none;
+}
+
+p {
+  font-size: 1rem;
+  opacity: 0.75;
+  margin-bottom: 2.5rem;
+  padding-left: 10px;
+}
+
+.button {
+  padding: 10px 20px 10px 20px;
+  width: 380px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 3px 4px #0A1329;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 22px;
+  outline: none;
+  border: none;
+  display: inline-block;
+}
+
+.button:active {
+  background-color: #E4CA42;
+  box-shadow: 0 1px 3px #0A1329;
+  transform: translateY(3px);
+}
+
+#SignUp {
+  background-color: #FFE24B;
+  color: #0A1329;
+}
+
+#SignUpwithAmazon, #SignUpwithGoodreads {
+  background-color: #F28464;
+  color: #FEFADD;
+}
+
+#email , #pw {
+  font-size: 1rem;
+  color: #0a1329;
+  background-color: #b0c2d4;
+}
+
+#pw {
+  margin-bottom: 0;
+}
